@@ -1,5 +1,7 @@
 package EnemySuper;
 
+import ItemsSuper.Item;
+
 import java.util.ArrayList;
 
 public abstract class Enemy {
@@ -7,13 +9,13 @@ public abstract class Enemy {
     private String name;
     private double HP;
     private double attackValue;
-    private ArrayList<items> items;
+    private ArrayList<Item> items;
 
     public Enemy(String name, double HP, double attackValue) {
         this.name = name;
         this.HP = HP;
         this.attackValue = attackValue;
-        this.items = items;
+        this.items = new ArrayList<>();
     }
 
 
@@ -25,7 +27,7 @@ public abstract class Enemy {
         return HP;
     }
 
-    public ArrayList<items> getItems() {
+    public ArrayList<Item> getItems() {
         return items;
     }
 }

@@ -1,6 +1,8 @@
 package SpellSuper;
 
-public abstract class Spell implements iSpell{
+import Interfaces.ISpell;
+
+public abstract class Spell implements ISpell {
 
     private String name;
 
@@ -11,9 +13,6 @@ public abstract class Spell implements iSpell{
         this.attackValue = attackValue;
     }
 
-    public double Attack(){
-        return this.attackValue;
-    }
 
 
 }

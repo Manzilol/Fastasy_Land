@@ -13,5 +13,6 @@ public abstract class Heal implements IHeal {
         this.healingValue = healingValue;
     }
 
-    public double Heal(){return this.healingValue;}
+
+
 }

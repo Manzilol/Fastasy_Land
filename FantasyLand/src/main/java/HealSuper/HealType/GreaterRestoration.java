@@ -1,6 +1,7 @@
 package HealSuper.HealType;
 
 import HealSuper.Heal;
+import PlayerSuper.Player;
 
 public class GreaterRestoration extends Heal {
 
@@ -8,4 +9,8 @@ public class GreaterRestoration extends Heal {
         super(name, healingValue);
     }
 
+    @Override
+    public void heal(Player player) {
+
+    }
 }
