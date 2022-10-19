@@ -1,6 +1,7 @@
 package ItemsSuper.ItemType;
 
-import ItemsSuper.Items;
+
+import ItemsSuper.Item;
 
 public class Herb extends Item {
 
