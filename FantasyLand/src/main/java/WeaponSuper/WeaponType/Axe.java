@@ -11,6 +11,5 @@ public class Axe extends Weapon {
 
     @Override
     public void attack(Enemy enemy) {
-
     }
 }

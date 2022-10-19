@@ -1,6 +1,8 @@
 package Interfaces;
 
+import PlayerSuper.Player;
+
 public interface IHeal {
 
-    void heal(double healValue);
+    void heal(Player player);
 }
