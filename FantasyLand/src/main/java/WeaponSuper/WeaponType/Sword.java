@@ -1,5 +1,6 @@
 package WeaponSuper.WeaponType;
 
+import EnemySuper.Enemy;
 import WeaponSuper.Weapon;
 
 public class Sword extends Weapon {
@@ -9,4 +10,8 @@ public class Sword extends Weapon {
     }
 
 
+    @Override
+    public void attack(Enemy enemy) {
+
+    }
 }

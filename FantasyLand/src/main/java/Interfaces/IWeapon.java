@@ -1,6 +1,8 @@
 package Interfaces;
 
+import EnemySuper.Enemy;
+
 public interface IWeapon {
 
-    void attack(double attackValue);
+    void attack(Enemy enemy);
 }

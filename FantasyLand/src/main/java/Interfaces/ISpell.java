@@ -1,6 +1,8 @@
 package Interfaces;
 
+import EnemySuper.Enemy;
+
 public interface ISpell {
 
-    void cast(double attackValue);
+    void cast(Enemy enemy);
 }
