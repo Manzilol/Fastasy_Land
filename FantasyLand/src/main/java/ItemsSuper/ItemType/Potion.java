@@ -1,6 +1,6 @@
 package ItemsSuper.ItemType;
 
-import ItemsSuper.Items;
+import ItemsSuper.Item;
 
 public class Potion extends Item {
 
