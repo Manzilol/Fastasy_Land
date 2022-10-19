@@ -1,4 +1,4 @@
-package Enemy;
+package EnemySuper;
 
 public class Troll extends Enemy{
 
