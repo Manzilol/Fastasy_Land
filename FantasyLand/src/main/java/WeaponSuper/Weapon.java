@@ -12,6 +12,14 @@ public abstract class Weapon implements IWeapon {
         this.name = name;
         this.attackValue = attackValue;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public double getAttackValue() {
+        return attackValue;
+    }
 }
 
 

@@ -13,6 +13,11 @@ public abstract class Spell implements ISpell {
         this.attackValue = attackValue;
     }
 
+    public String getName() {
+        return name;
+    }
 
-
+    public double getAttackValue() {
+        return attackValue;
+    }
 }

@@ -13,6 +13,11 @@ public abstract class Heal implements IHeal {
         this.healingValue = healingValue;
     }
 
+    public String getName() {
+        return name;
+    }
 
-
+    public double getHealingValue() {
+        return healingValue;
+    }
 }
