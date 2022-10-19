@@ -1,4 +1,4 @@
-package Enemy;
+package EnemySuper;
 
 import java.util.ArrayList;
 

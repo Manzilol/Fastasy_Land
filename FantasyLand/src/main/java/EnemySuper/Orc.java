@@ -1,4 +1,4 @@
-package Enemy;
+package EnemySuper;
 
 public class Orc extends Enemy {
 
