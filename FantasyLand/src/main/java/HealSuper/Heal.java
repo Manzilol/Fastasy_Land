@@ -1,6 +1,8 @@
 package HealSuper;
 
-public abstract class Heal extends iHeal {
+import Interfaces.IHeal;
+
+public abstract class Heal implements IHeal {
 
     private String name;
 

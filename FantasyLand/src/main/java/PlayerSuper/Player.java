@@ -1,5 +1,6 @@
 package PlayerSuper;
 
+import Interfaces.IWeapon;
 import ItemsSuper.Items;
 import sun.security.util.ArrayUtil;
 

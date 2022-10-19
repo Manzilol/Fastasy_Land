@@ -1,6 +1,8 @@
-package EnemySuper;
+package EnemySuper.EnemyType;
 
-public class Troll extends Enemy{
+import EnemySuper.Enemy;
+
+public class Troll extends Enemy {
 
 
     public Troll(String name, double HP, double attackValue) {
