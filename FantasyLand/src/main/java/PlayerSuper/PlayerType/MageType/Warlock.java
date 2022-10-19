@@ -6,8 +6,8 @@ public class Warlock extends PlayerSuper.PlayerType.Mage {
 
 
 
-    public Warlock(String name, Double health, RaceType race , ArrayList<Items>items) {
-        super(name, health, race,items);
+    public Warlock(String name, Double HP, RaceType race , ArrayList<Items>items) {
+        super(name, HP, race,items);
 
 
     }
