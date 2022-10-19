@@ -1,22 +1,18 @@
 package PlayerSuper.PlayerType;
 
-import Interfaces.IWeapon;
-import ItemsSuper.Items;
-import PlayerSuper.Player;
+import ItemsSuper.Item;
 import PlayerSuper.RaceType;
 import
 
 import java.util.ArrayList;
 
-    private WeaponType weaponType;
-
-public abstract class Fighter extends Player {
+public abstract class Fighter extends PlayerSuper.Player {
 
 
 
 
-    public Fighter(String name, Double HP,RaceType race , ArrayList<Items> items ) {
-        super(name, HP, race,items);
+    public Fighter(String name, Double HP,RaceType race , ArrayList<Item> items ) {
+        super(name, HP, race);
 
 
     }

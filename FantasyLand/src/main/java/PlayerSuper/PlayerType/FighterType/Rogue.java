@@ -1,8 +1,6 @@
 package PlayerSuper.PlayerType.FighterType;
 
-import EnemySuper.Enemy;
-import ItemsSuper.Items;
-import PlayerSuper.PlayerType.Fighter;
+import ItemsSuper.Item;
 import PlayerSuper.RaceType;
 
 import java.util.ArrayList;
@@ -10,9 +8,12 @@ import java.util.ArrayList;
 public class Rogue extends Fighter {
 
 
-    public Rogue(String name, Double HP, RaceType race , ArrayList<Items> items) {
-        super(name, HP,race,items);
+    public Rogue(String name, Double HP, RaceType race) {
+        super(name, HP,race);
 
+    public Rogue(String name, Double HP, RaceType race) {
+        super(name, HP,race);
+        this.items = new ArrayList<Item>();
 
     }
 

@@ -1,17 +1,16 @@
 package PlayerSuper.PlayerType.FighterType;
 
-import EnemySuper.Enemy;
-import ItemsSuper.Items;
-import PlayerSuper.PlayerType.Fighter;
+import ItemsSuper.Item;
 import PlayerSuper.RaceType;
 
 import java.util.ArrayList;
 
-public class Knight extends Fighter {
+public class Knight extends Fighter{
 
 
-    public Knight(String name, Double HP, RaceType race , ArrayList<Items> items) {
-        super(name, HP,race, items);
+    public Knight(String name, Double HP, RaceType race) {
+        super(name, HP,race);
+        this.items = new ArrayList<Item>();
 
 
     }

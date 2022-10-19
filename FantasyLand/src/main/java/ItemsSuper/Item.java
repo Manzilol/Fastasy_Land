@@ -1,11 +1,11 @@
 package ItemsSuper;
 
-public abstract class Items {
+public abstract class Item {
 
     private String name;
     private double healValue;
 
-    public Items(String name, double healValue){
+    public Item(String name, double healValue){
         this.name = name;
         this.healValue = healValue;
     }

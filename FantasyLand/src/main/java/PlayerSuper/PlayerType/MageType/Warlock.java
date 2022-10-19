@@ -1,16 +1,21 @@
 package PlayerSuper.PlayerType.MageType;
 
-import ItemsSuper.Items;
+import ItemsSuper.Item;
+import PlayerSuper.PlayerType.Mage;
 import PlayerSuper.RaceType;
 
 import java.util.ArrayList;
 
-public class Warlock extends PlayerSuper.PlayerType.Mage {
+public class Warlock extends Mage {
 
 
 
-    public Warlock(String name, Double HP, RaceType race , ArrayList<Items> items) {
-        super(name, HP, race,items);
+    private ArrayList<Item> items;
+
+
+    public Warlock(String name, Double HP, RaceType race) {
+        super(name, HP,race);
+        this.items = new ArrayList<Item>();
 
 
     }
