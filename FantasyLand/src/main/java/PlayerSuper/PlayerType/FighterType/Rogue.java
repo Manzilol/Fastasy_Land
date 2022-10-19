@@ -5,8 +5,8 @@ import PlayerSuper.RaceType;
 public class Rogue extends PlayerSuper.PlayerType.Fighter {
 
 
-    public Rogue(String name, Double health, RaceType race ,ArrayList<Items>items) {
-        super(name, health,race,items);
+    public Rogue(String name, Double HP, RaceType race ,ArrayList<Items>items) {
+        super(name, HP,race,items);
 
 
     }

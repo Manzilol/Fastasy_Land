@@ -4,8 +4,8 @@ import PlayerSuper.RaceType;
 
 public class Wizard extends PlayerSuper.PlayerType.Mage{
 
-    public Wizard(String name, Double health, RaceType race , ArrayList<Items>items ) {
-        super(name, health,race, items);
+    public Wizard(String name, Double HP, RaceType race , ArrayList<Items>items ) {
+        super(name, HP,race, items);
 
 
     }

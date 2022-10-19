@@ -7,14 +7,14 @@ import java.util.ArrayList;
 public abstract class Player {
 
     private String name;
-    private double health;
+    private double HP;
     private ArrayList<Items> items;
 
     private RaceType race;
 
-public Player(String name , double health, RaceType race,ArrayList<Item> items){
+public Player(String name , double HP, RaceType race,ArrayList<Item> items){
     this.name = name;
-    this.health = health;
+    this.HP= HP;
     this.race = race;
     this.items = new ArrayList<Items>();
 
