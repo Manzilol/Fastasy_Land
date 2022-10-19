@@ -15,7 +15,7 @@ public abstract class Enemy {
         this.attackValue = attackValue;
         this.items = items;
     }
-    
+
 
     public String getName() {
         return name;
