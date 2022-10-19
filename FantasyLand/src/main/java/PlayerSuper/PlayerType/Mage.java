@@ -1,17 +1,20 @@
 package PlayerSuper.PlayerType;
 
-import ItemsSuper.Items;
+import ItemsSuper.Item;
+import PlayerSuper.Player;
 import PlayerSuper.RaceType;
 
 import java.util.ArrayList;
 
-public abstract class Mage extends PlayerSuper.Player{
+public abstract class Mage extends Player {
 
 
 
-    public Mage(String name, Double HP, RaceType race , ArrayList<Items> items) {
-        super(name, HP,race,items);
+    private ArrayList<Item> items;
 
 
+    public Mage(String name, Double HP,RaceType race) {
+        super(name, HP, race);
+        this.items = new ArrayList<Item>();
     }
 }

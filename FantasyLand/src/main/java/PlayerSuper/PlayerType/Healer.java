@@ -1,17 +1,20 @@
 package PlayerSuper.PlayerType;
 
-import ItemsSuper.Items;
+import ItemsSuper.Item;
+import PlayerSuper.Player;
 import PlayerSuper.RaceType;
 
 import java.util.ArrayList;
 
-public abstract class Healer extends PlayerSuper.Player {
+public abstract class Healer extends Player {
 
 
-    public Healer(String name, Double HP, RaceType race , ArrayList<Items> items) {
-        super(name, HP, race,items);
+    private ArrayList<Item> items;
 
 
+    public Healer(String name, Double HP,RaceType race) {
+        super(name, HP, race);
+        this.items = new ArrayList<Item>();
     }
 
 }

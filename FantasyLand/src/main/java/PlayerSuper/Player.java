@@ -1,7 +1,6 @@
 package PlayerSuper;
 
-import ItemsSuper.Items;
-import sun.security.util.ArrayUtil;
+import ItemsSuper.Item;
 
 import java.util.ArrayList;
 
@@ -9,15 +8,15 @@ public abstract class Player {
 
     private String name;
     private double HP;
-    private ArrayList<Items> items;
+    private ArrayList<Item> items;
 
     private RaceType race;
 
-public Player(String name , double HP, RaceType race,ArrayList<Items> items){
+public Player(String name , double HP, RaceType race){
     this.name = name;
     this.HP= HP;
     this.race = race;
-    this.items = new ArrayList<Items>();
+    this.items = new ArrayList<Item>();
 
 }
 
@@ -38,11 +37,11 @@ public Player(String name , double HP, RaceType race,ArrayList<Items> items){
         this.HP = HP;
     }
 
-    public ArrayList<Items> getItems() {
+    public ArrayList<Item> getItems() {
         return items;
     }
 
-    public void setItems(ArrayList<Items> items) {
+    public void setItems(ArrayList<Item> items) {
         this.items = items;
     }
 
