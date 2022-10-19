@@ -1,6 +1,8 @@
 package WeaponSuper;
 
-public abstract class Weapon implements iWeapon{
+import Interfaces.IWeapon;
+
+public abstract class Weapon implements IWeapon {
 
     private String name;
 
@@ -10,8 +12,6 @@ public abstract class Weapon implements iWeapon{
         this.name = name;
         this.attackValue = attackValue;
     }
-
-    public double Attack(){
-        return this.attackValue;
-    }
 }
+
+

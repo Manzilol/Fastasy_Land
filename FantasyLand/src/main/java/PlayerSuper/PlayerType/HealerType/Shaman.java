@@ -1,7 +1,6 @@
 package PlayerSuper.PlayerType.HealerType;
 
-import ItemsSuper.Item;
-import PlayerSuper.PlayerType.Healer;
+import ItemsSuper.Items;
 import PlayerSuper.RaceType;
 
 import java.util.ArrayList;

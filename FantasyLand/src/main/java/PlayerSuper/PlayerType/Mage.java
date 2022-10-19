@@ -6,7 +6,7 @@ import PlayerSuper.RaceType;
 
 import java.util.ArrayList;
 
-public abstract class Mage extends Player {
+public abstract class Mage extends Player{
 
 
 

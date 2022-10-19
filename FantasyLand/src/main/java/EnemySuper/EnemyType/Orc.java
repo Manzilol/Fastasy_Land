@@ -1,4 +1,6 @@
-package EnemySuper;
+package EnemySuper.EnemyType;
+
+import EnemySuper.Enemy;
 
 public class Orc extends Enemy {
 
