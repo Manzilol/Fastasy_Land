@@ -1,2 +1,4 @@
-package PlayerSuper;public enum RaceType {
+package PlayerSuper;
+
+public enum RaceType {
 }
