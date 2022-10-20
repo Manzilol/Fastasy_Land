@@ -12,6 +12,7 @@ public class Sword extends Weapon {
 
     @Override
     public void attack(Enemy enemy) {
-
+        double newEnemyHP = enemy.getHP() - getAttackValue();
+        enemy.setHP(newEnemyHP);
     }
 }

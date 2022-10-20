@@ -5,12 +5,13 @@ import SpellSuper.Spell;
 
 public class Rot extends Spell {
 
-    public Rot(String name, double attackValue) {
-        super(name, attackValue);
+    public Rot(double attackValue) {
+        super(attackValue);
     }
 
     @Override
     public void cast(Enemy enemy) {
-
+        double newEnemyHP = enemy.getHP() - getAttackValue();
+        enemy.setHP(newEnemyHP);
     }
 }

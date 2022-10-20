@@ -1,5 +1,6 @@
 package PlayerSuper.PlayerType;
 
+import EnemySuper.Enemy;
 import ItemsSuper.Item;
 import PlayerSuper.Player;
 import PlayerSuper.RaceType;
@@ -21,5 +22,9 @@ public abstract class Mage extends Player{
 
     public void setSpell(Spell spell) {
         this.spell = spell;
+    }
+
+    public void attackWithSpell(Enemy enemy){
+        spell.cast(enemy);
     }
 }

@@ -1,8 +1,11 @@
 import HealSuper.Heal;
 import HealSuper.HealType.HealingHands;
 import ItemsSuper.Item;
+import PlayerSuper.PlayerType.FighterType.Knight;
 import PlayerSuper.PlayerType.HealerType.Druid;
 import PlayerSuper.RaceType;
+import WeaponSuper.Weapon;
+import WeaponSuper.WeaponType.Sword;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -13,11 +16,19 @@ import static org.junit.Assert.assertEquals;
 public class DruidTest {
 
     Druid druid;
+
+    Sword sword;
+
+    Knight player;
     HealingHands healingHands;
+
     ArrayList<Item> items;
 
     @Before
     public void setUp(){
+        sword = new Sword("Dildopolis", 10);
+        healingHands = new HealingHands(10);
+        player = new Knight("The Horn", 100.00, RaceType.ORC, sword);
         druid = new Druid("Druid Dave", 100.00, RaceType.DARK_ELF, healingHands);
     }
 
@@ -35,5 +46,11 @@ public class DruidTest {
 
     @Test
     public void hasHeal(){assertEquals(healingHands, druid.getHeal());
+    }
+
+    @Test
+    public void canHeal() {
+        druid.healWithSpell(player);
+        assertEquals(110, player.getHP(), 0.0);
     }
 }

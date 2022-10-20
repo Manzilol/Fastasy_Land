@@ -1,3 +1,4 @@
+import EnemySuper.EnemyType.Goblin;
 import PlayerSuper.PlayerType.MageType.Wizard;
 import PlayerSuper.RaceType;
 import SpellSuper.SpellType.Rot;
@@ -10,10 +11,14 @@ public class WizardTest {
 
     Wizard wizard;
     Rot rot;
+    Goblin goblin;
 
     @Before
+
     public void setUp(){
+        rot = new Rot(10);
         wizard = new Wizard("Albus Dumbledore", 200.00, RaceType.HUMAN, rot);
+        goblin = new Goblin("Gobbles", 20, 10);
     }
 
     @Test
@@ -32,4 +37,9 @@ public class WizardTest {
     public void hasSpell() {
         assertEquals(rot, wizard.getSpell());}
 
+    @Test
+    public void canAttack() {
+        wizard.attackWithSpell(goblin);
+        assertEquals(10, goblin.getHP(), 0.0);
+    }
 }

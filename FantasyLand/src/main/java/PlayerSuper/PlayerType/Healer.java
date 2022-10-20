@@ -1,5 +1,6 @@
 package PlayerSuper.PlayerType;
 
+import EnemySuper.Enemy;
 import HealSuper.Heal;
 import ItemsSuper.Item;
 import PlayerSuper.Player;
@@ -23,4 +24,9 @@ public abstract class Healer extends Player {
     public void setHeal(Heal heal) {
         this.heal = heal;
     }
+
+    public void healWithSpell(Player player){
+        heal.heal(player);
+    }
+
 }

@@ -27,6 +27,10 @@ public abstract class Enemy {
         return HP;
     }
 
+    public void setHP(double HP) {
+        this.HP = HP;
+    }
+
     public ArrayList<Item> getItems() {
         return items;
     }

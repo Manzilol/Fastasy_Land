@@ -1,3 +1,5 @@
+import EnemySuper.Enemy;
+import EnemySuper.EnemyType.Goblin;
 import PlayerSuper.PlayerType.FighterType.Knight;
 import PlayerSuper.RaceType;
 import WeaponSuper.Weapon;
@@ -11,9 +13,13 @@ public class KnightTest {
 
     public Knight knight;
     public Sword sword;
+    public Goblin goblin;
     @Before
     public void setUp(){
+        sword = new Sword("MeetCute", 10);
         knight = new Knight("Sir Donkey Balls", 100.00, RaceType.HUMAN, sword);
+        goblin = new Goblin("Deez nuts", 20, 5);
+
     }
 
     @Test
@@ -34,6 +40,14 @@ public class KnightTest {
     @Test
     public void hasAWeapon(){
         assertEquals(sword, knight.getWeapon());
+    }
+
+    @Test
+    public void canAttack() {
+        knight.attackWithWeapon(goblin);
+        knight.attackWithWeapon(goblin);
+        knight.attackWithWeapon(goblin);
+        assertEquals(-10, goblin.getHP(), 0.0);
     }
 }
 

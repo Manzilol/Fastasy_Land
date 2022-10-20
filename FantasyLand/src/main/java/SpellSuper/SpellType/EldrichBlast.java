@@ -5,12 +5,13 @@ import SpellSuper.Spell;
 
 public class EldrichBlast extends Spell {
 
-    public EldrichBlast(String name, double attackValue) {
-        super(name, attackValue);
+    public EldrichBlast(double attackValue) {
+        super(attackValue);
     }
 
     @Override
     public void cast(Enemy enemy) {
-
+        double newEnemyHP = enemy.getHP() - getAttackValue();
+        enemy.setHP(newEnemyHP);
     }
 }
